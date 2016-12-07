@@ -6,8 +6,9 @@ PukiWiki 1.5.1 UTF-8版の自分用の改造版です。
 ## 改造点
 
 - XMLサイトマップの生成
+- スマートフォン表示の対応
 
-## 詳細
+## 使い方
 
 ### XMLサイトマップの生成
 
@@ -18,9 +19,14 @@ PukiWiki 1.5.1 UTF-8版の自分用の改造版です。
 `http://foo/robots.txt` に
 
 ```
-  User-Agent:*
-  Disallow:
-  Sitemap:http://foo/sitemap.xml
+User-Agent:*
+Disallow:
+
+Sitemap:http://foo/sitemap.xml
 ```
 
 みたいな感じで書いてあげればOK。
+
+### スマートフォン表示の対応
+
+[スマホ対応版のスキン](http://180xz.com/wiki/index.php?Wiki/PukiWiki/Skin/black-smartphone（スマホ対応版）)を取り込みました。

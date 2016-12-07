@@ -25,7 +25,7 @@ if (! defined('PKWK_OPTIMISE'))
 if (! defined('PKWK_READONLY'))
 	define('PKWK_READONLY', 0); // 0 or 1
 
-// PKWK_SAFE_MODE - Prohibits some unsafe(but compatible) functions 
+// PKWK_SAFE_MODE - Prohibits some unsafe(but compatible) functions
 if (! defined('PKWK_SAFE_MODE'))
 	define('PKWK_SAFE_MODE', 0);
 
@@ -455,6 +455,9 @@ $usedatetime = 1;
 $agents = array(
 // pattern: A regular-expression that matches device(browser)'s name and version
 // profile: A group of browsers
+
+	// Smartphone
+	array('pattern'=>'#\b(Android|iPhone)\b#',	'profile'=>'sp'),
 
     // Embedded browsers (Rich-clients for PukiWiki)
 
